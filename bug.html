@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div.</p>
+  </div>
+  <script>
+    //Incorrect way to select an element with an id
+    var element = document.getElementById('#myDiv');
+    console.log(element); //Will print null
+    
+    //Correct way to select an element with an id
+    var element = document.getElementById('myDiv');
+    console.log(element); //Will print the div element
+  </script>
+</body>
+</html>
